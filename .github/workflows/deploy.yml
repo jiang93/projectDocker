@@ -1,4 +1,4 @@
-name: Container Deployment
+name: Web Deployment(without container)
 on:
   push:
     branches:
