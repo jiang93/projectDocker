@@ -1,4 +1,4 @@
-name: Web Deployment(without container)
+name: Web Deployment(w/out container)
 on:
   push:
     branches:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: cluster0.tcswtrr.mongodb
+      MONGODB_CLUSTER_ADDRESS: cluster0.tcswtrr.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
